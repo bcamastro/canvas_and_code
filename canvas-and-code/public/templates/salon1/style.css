@@ -1,0 +1,42 @@
+/* style.css */
+.hero-section {
+  background-image: url('./salon_hero_background.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+body {
+  padding-top: 70px;
+}
+h1, h2, h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img.img-fluid {
+  transition: transform 0.3s ease;
+}
+img.img-fluid:hover {
+  transform: scale(1.05);
+}
+.card {
+  border: none;
+  border-radius: 12px;
+}
+.card-title {
+  font-weight: 600;
+}
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #d63384 !important;
+}
