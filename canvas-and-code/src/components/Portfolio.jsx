@@ -28,17 +28,62 @@ const photoProjects = [
     {
         id: 101,
         title: "Photo1",
-        image: "https://placehold.co/350",
+        image: "/images/photo1.jpg"
     },
     {
         id: 102,
         title: "Photo2",
-        image: "https://placehold.co/350",
+        image: "/images/photo2.jpg"
     },
     {
         id: 103,
         title: "Photo3",
-        image: "https://placehold.co/350"
+        image: "/images/photo3.jpg"
+    },
+    {
+        id: 104,
+        title: "Photo4",
+        image: "/images/photo4.jpg"
+    },
+    {
+        id: 105,
+        title: "Photo2",
+        image: "/images/photo5.jpg"
+    },
+    {
+        id: 106,
+        title: "Photo3",
+        image: "/images/photo6.jpg"
+    },
+    {
+        id: 107,
+        title: "Photo1",
+        image: "/images/photo7.jpg"
+    },
+    {
+        id: 108,
+        title: "Photo2",
+        image: "/images/photo8.jpg"
+    },
+    {
+        id: 109,
+        title: "Photo3",
+        image: "/images/photo9.jpg"
+    },
+    {
+        id: 110,
+        title: "Photo1",
+        image: "/images/photo10.jpg"
+    },
+    {
+        id: 111,
+        title: "Photo2",
+        image: "/images/photo11.jpg"
+    },
+    {
+        id: 112,
+        title: "Photo12",
+        image: "/images/photo12.JPG"
     }
 ];
 
@@ -52,7 +97,7 @@ const Portfolio = () => {
                 ))}
             </div>
             <hr className="my-5" />
-            <h2 className="text-center mb-4">Photography Portfolio</h2>
+            <h2 className="text-center mb-4">Branding Photo shoots</h2>
             <div className="row">
                 {photoProjects.map((project) => (
                     <PortfolioItem key={project.id}{...project} type="photo"/>
