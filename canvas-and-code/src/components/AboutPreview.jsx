@@ -26,7 +26,9 @@ const AboutPreview = () => (
             to create Canvas and Code! At Canvas and Code we are there for you weather it be photos, website development, 
             maintaining websites or a combination of them all we have you covered !
         </p>
-        <a href="mailo:brenden@canvasandcodeny.com" className="btn btn-outline-dark mt-3">Get In Touch</a>
+        <a href="mailto:brenden@canvasandcodeny.com" className="btn btn-outline-dark mt-3">Get In Touch</a>
+        <p>email: brenden@canvasandcodeny.com</p>
+        <p>phone: 914-482-3997</p>
     </div>
     </section>
 );
