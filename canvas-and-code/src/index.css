@@ -15,26 +15,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* .hero-section {
-  min-height: 100vh;
-  background-color: #f8f9fa; 
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-image: url('/public/images/main_image.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-} */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -65,6 +46,19 @@ h1 {
 
 h2 {
   color: white;
+}
+
+.service-box {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem; 
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+.service-box h4 {
+  color: #343a40;
+  font-weight: 600;
 }
 
 button {
