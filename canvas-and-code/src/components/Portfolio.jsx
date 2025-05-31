@@ -24,6 +24,24 @@ const projects = [
 
 ];
 
+const photoProjects = [
+    {
+        id: 101,
+        title: "Photo1",
+        image: "https://placehold.co/350",
+    },
+    {
+        id: 102,
+        title: "Photo2",
+        image: "https://placehold.co/350",
+    },
+    {
+        id: 103,
+        title: "Photo3",
+        image: "https://placehold.co/350"
+    }
+];
+
 const Portfolio = () => {
     return (
         <section id='portfolio' className="container py-5">
@@ -33,7 +51,15 @@ const Portfolio = () => {
                     <PortfolioItem key={project.id} {...project} />
                 ))}
             </div>
+            <hr className="my-5" />
+            <h2 className="text-center mb-4">Photography Portfolio</h2>
+            <div className="row">
+                {photoProjects.map((project) => (
+                    <PortfolioItem key={project.id}{...project} type="photo"/>
+            ))}
+            </div>
         </section>
+
     );
 };
 
