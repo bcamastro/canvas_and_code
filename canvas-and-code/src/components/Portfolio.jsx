@@ -90,7 +90,7 @@ const photoProjects = [
 const Portfolio = () => {
     return (
         <section id='portfolio' className="container py-5">
-            <h2 className="text-center mb-4">Templates</h2>
+            <h2 className="text-center mb-4">Examples</h2>
             <div className="row">
                 {projects.map((project) => (
                     <PortfolioItem key={project.id} {...project} />

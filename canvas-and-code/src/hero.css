@@ -1,24 +1,40 @@
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background-color: #f8f9fa; /* Same as Bootstrap .bg-light */
+    background-color: #f8f9fa;
     padding-top: 60px;
     padding-bottom: 60px;
+    overflow: hidden;
+    color: white;
+    z-index: 0;
+}
+
+/* blured background section */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url('/images/main_image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    filter: blur(3px); 
+    z-index: -2;
+    transform: scale(1.1); 
 }
-.container {
-    z-index: 2;
-}
+
+/*dark overlay layer */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* ← adjust opacity here */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
     z-index: 1;
 }

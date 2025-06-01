@@ -10,6 +10,7 @@ const Navbar = () => (
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
+            <li className='nav-item'><a className='nav-link' href="#whyus">Why Us</a></li>
             <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
             <li className="nav-item"><a className="nav-link" href="#portfolio">Portfolio</a></li>
             <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
