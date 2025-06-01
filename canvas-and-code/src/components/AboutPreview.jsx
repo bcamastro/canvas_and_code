@@ -18,9 +18,9 @@ const AboutPreview = () => (
             websites and fixing anyone’s tech issues. When Brenden got older he successfully started his photography 
             company and has done weddings, events, engagement photos, business photoshoots, branding shoots, product 
             photos, videography for businesses and headshots. While building the photography company Brenden attended 
-            courses in computer science, software development, coding and web design. During this time he fell in love 
+            courses in computer science, software development, and web design. During this time he fell in love 
             with this side of technology and knew this was his career path. His passion for coding business websites 
-            came when he started running the backend technology side of his wifes salon and training company. As he 
+            came when he started running the technology side of his wifes salon and training company. As he 
             maintained a luxury high end look and feel for this business, many more businesses started reaching out 
             for branding photos and or website coding services. Brenden’s skills in coding and photography were combined 
             to create Canvas and Code! At Canvas and Code we are there for you weather it be photos, website development, 
