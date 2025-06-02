@@ -17,6 +17,12 @@ const projects = [
     },
     {
         id: 3,
+        title: "Loula Beauty",
+        image: "/images/loulabeauty.png",
+        link: "loulabeautyny.com"
+    },
+    {
+        id: 3,
         title: "Artsy template 1",
         image: "/images/artsy_template.png",
         link: "/templates/artsy/index.html"
