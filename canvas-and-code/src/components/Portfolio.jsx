@@ -23,6 +23,12 @@ const projects = [
     },
     {
         id: 4,
+        title: "Southern  Western Style",
+        image: "/images/Western_style.png",
+        link: "/templates/Western_Style/index.html"
+    },
+    {
+        id: 5,
         title: "Artsy template 1",
         image: "/images/artsy_template.png",
         link: "/templates/artsy/index.html"
