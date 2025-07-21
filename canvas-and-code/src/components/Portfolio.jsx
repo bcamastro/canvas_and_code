@@ -15,30 +15,31 @@ const projects = [
         image: "/images/desertdarlinlashes.png",
         link: "https://desertdarlinlashes.com"
     },
-    { 
-        id: 3,
-        title: "Digital Dimensions",
-        image: "/images/digital_dimensions.png",
-        link: "/templates/Digital_Dimensions/index.html"
-    },
     {
+        id: 3,
+        title: "Southern Chic Lash",
+        image: "/images/southernchiclash.png",
+        link: "https://southernchiclash.com"
+    },
+
+        {
         id: 4,
         title: "glow and grace",
         image: "/images/glow_and_grace.png",
         link: "/templates/salon1/index.html"
     },
+    { 
+        id: 5,
+        title: "Digital Dimensions",
+        image: "/images/digital_dimensions.png",
+        link: "/templates/Digital_Dimensions/index.html"
+    },
     
     {
-        id: 5,
+        id: 6,
         title: "Southern  Western Style",
         image: "/images/Western_style.png",
         link: "/templates/Western_Style/index.html"
-    },
-    {
-        id: 6,
-        title: "Artsy template 1",
-        image: "/images/artsy_template.png",
-        link: "/templates/artsy/index.html"
     }
 
 ];
