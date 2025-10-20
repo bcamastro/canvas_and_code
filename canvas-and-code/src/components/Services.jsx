@@ -12,17 +12,17 @@ const Services = () => (
             <p>Responsive, modern websites that perform beautifully on all devices.</p>
             <hr className="my-4" />
 
-            <ServicePackage title="Starter Site" price="$500+">
+            <ServicePackage title="Starter Site" price="$650+">
                 <p>1-page scroll site, mobile-friendly, basic info & contact</p>
                 <p>Great for small businesses, freelancers, creatives, or a personal website</p>
             </ServicePackage>
 
-            <ServicePackage title="Business Builder" price="$1000+">
+            <ServicePackage title="Business Builder" price="$1150+">
                 <p>3–5 pages, custom design, contact form, SEO</p>
                 <p>Great for new or growing businesses, larger salons, or anyone in need of a larger site</p>
             </ServicePackage>
 
-            <ServicePackage title="Premium Presence (coming soon)" price="$2000+">
+            <ServicePackage title="Premium Presence (coming soon)" price="$2150+">
                 <p>Full custom build front and backend, database, animations, customer logins, API integrations and more!</p>
                 <p>Great for a larger high end company, clinics, event venues</p>
             </ServicePackage>
@@ -34,15 +34,15 @@ const Services = () => (
             <p>Visual identity that speaks your brand’s voice and engages your audience.</p>
             <hr className="my-4" />
 
-            <ServicePackage title="Launch Pack" price="$700+">
+            <ServicePackage title="Launch Pack" price="$850+">
                 <p>Starter site + 30-min photo session (10–15 edits)</p>
             </ServicePackage>
 
-            <ServicePackage title="Growth Pack" price="$1350+">
+            <ServicePackage title="Growth Pack" price="$1500+">
                 <p>Business Builder website + full brand shoot</p>
             </ServicePackage>
 
-            <ServicePackage title="All in One Branding (coming soon)" price="$1750">
+            <ServicePackage title="All in One Branding (coming soon)" price="$1900+">
                 <p>Premium site + visual brand story (photo + short video)</p>
             </ServicePackage>
             </div>
@@ -53,7 +53,7 @@ const Services = () => (
             <p>Professional imagery that enhances your brand, product, or service.</p>
             <hr className="my-4" />
 
-            <ServicePackage title="Essentials Session" price="$250+">
+            <ServicePackage title="Essentials Session" price="$300+">
                 <p>30–45 min session, 10–15 edited photos</p>
                 <p>Great for solo professionals, influencers, quick promo shots</p>
             </ServicePackage>
