@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light pt-3">
+<nav class="navbar navbar-expand-lg navbar-light pt-1 pb-3">
   <div class="container"
 <a class="navbar-brand" href="index.html">
   <img src="images/logo.svg" alt="Logo" class="navbar-logo img-fluid mt-3" />
@@ -34,33 +34,55 @@
 </nav>
 
 <!-- HERO SECTION -->
-<section class="hero-section py-3">
-  <div class="container">
-    <div class="row align-items-center">
+<section class="hero-section py-3 slides">
+  <div class="container my-3">
+    <div class="row align-items-center fade-in">
       <!-- Image on the left -->
-      <div class="col-md-6 text-center">
-        <img src="images/two_by_beach.jpg" alt="Two women at the beach" class="img-fluid rounded fade-in two-women shadow" />
+      <div class="col-md-10 text-center">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/two_by_beach.jpg" class="d-block w-100" alt="two woman with feet in the sand">
+            </div>
+          <div class="carousel-item shadow rounded">
+            <img src="images/woman-jumping.jpeg" class="d-block w-100" alt="woman jumping in the air">
+          </div>
+    <div class="carousel-item rounded">
+      <img src="images/woman-arms-up.jpeg" class="d-block w-100 rounded" alt="woman with arms up">
+    </div>
+  </div>
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+</div>
       </div>
+      
       <!-- Text on the right -->
-      <div class="col-md-6 textured-bg">
+      <!-- <div class="col-md-6 textured-bg">
         <div class="hero-text text-center">
           <h2>How are you...</h2>
           <br/>
           <h2 class="fancy-font">Really?</h2>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section text-center d-flex align-items-center mx-auto">  <div class="container pt-2 pb-4">
-    <h3>Women’s lives are always changing...</h3>
-    <img src="images/squiggly_line.png"/>
-    <br />
-    <br />
+<section class="section text-center d-flex align-items-center mx-auto">  
+  <div class="container pt-2 pb-5 mb-5">
+    <h3 class="mt-3">Women’s lives are always changing...</h3>
+    <img src="images/squiggly_line.png" class="mb-3">
+    <!-- <br />
+    <br /> -->
     <p>
-     Every decade brings its own mix of <strong> challenges, shifting priorities, and unexpected turns.</strong> My
+     Every decade brings its own mix of challenges, shifting priorities, and unexpected turns. My
 mission is to be in your corner through it all including the highs, the lows, and everything in
 between. I offer a non-judgmental space where you can share the thoughts and feelings that are
 hard to say out loud and feel safe being fully yourself. Together, we’ll navigate the changes, work
@@ -71,15 +93,17 @@ through the challenges, and move toward the life you want to be living.
 
 <!-- QUOTE 1 -->
 <section class="quote-section text-center d-flex justify-content-around align-items-center mb-0">
-  <p>"Every woman deserves support through life’s most complex transitions."<br />– Jodi Trager Therapy</p>
+  <h3>"Every woman deserves to thrive and not just survive."<br />– Jodi Trager Therapy</h3>
 </section>
 
 <!-- MEET JODI -->
-<section class="section mt-0 textured-bg" id="about">
-  <div class="container">
+<section class="section mt-0 textured-bg pt-5 pb-5" id="about">
+  <div class="container mt-5 mb-5">
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="images/jodi_trager2.jpg" alt="Jodi" class="img-fluid rounded d-flex align-items-center p-5 fade-in" />
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="photo-frame fade-in">
+          <img src="images/jodi_trager2.jpg" alt="Jodi" class="img-fluid rounded fade-in shadow jodi2" />
+        </div>
       </div>
       <div class="col-md-6 text-center">
         <div class="meet-jodi p-4 align-items-center shadow mb-5">
@@ -100,78 +124,55 @@ It’s an honor to walk alongside women as they care for their mental health, em
 
 <!-- QUOTE 2 -->
 <section class="you-survived text-center d-flex justify-content-around align-items-center">
-  <h3>"You’ve survived 100 percent of your worst days" – Robin Arzón</h3>
+  <h3>"You’ve survived 100 percent of your worst days" <br />– Robin Arzón</h3>
 </section>
 
 <!-- HOW CAN THERAPY HELP -->
-<section class="therapy-help py-5 textured-bg">
-  <div class="container">
-    <!-- Section title -->
-    <h2 class="therapy text-center mb-1 ml-3">How can therapy help me?</h2>
-
-    <div class="row">
-      <!-- Left Column (Images) -->
-      <div class="col-md-3 d-flex flex-column justify-content-between">
-        <img src="images/classroom.jpg" alt="classroom" class="img-fluid rounded shadow fade-in my-2 my-md-0" />
-        <img src="images/pregnancy-test.jpg" alt="Pregnancy test" class="img-fluid rounded shadow fade-in my-2 my-md-0" />
-      </div>
-
-      <!-- Middle Column (Text List) -->
-      <div class="col-md-6">
-        <div class="help-list p-4 rounded purple my-2 my-md-0 shadow">
-          <ul class="list-unstyled text-center">
-            <li>Offer a space to slow down, tune in, and feel heard without judgment</li>
-            <br />
-            <li>Help you make sense of what you’re feeling, especially when it’s hard to name</li>
-            <br />
-            <li>Support you through life transitions, planned or unexpected</li>
-            <br />
-            <li>Provide tools for managing anxiety, low mood, and emotional overwhelm</li>
-            <br />
-            <li>Explore patterns in relationships and how they impact your well-being</li>
-            <br />
-            <li>Build confidence in your decisions, boundaries, and voice</li>
-            <br />
-            <li>Untangle the pressure to do it all perfectly or meet everyone’s expectations</li>
-            <br />
-            <li>Help you reconnect with yourself not just as a parent, partner, or professional, but as a person</li>
-            <br />
-            <li>Create more space for your needs without guilt</li>
-            <br />
-            <li>Support you in navigating loss, grief, and other big emotions with care</li>
-            <br />
-            <li>Offer accountability, clarity, and support in showing up for yourself</li>
-            <br />
-            <li>Remind you that you don’t have to hold everything alone</li>
-            <br />
-          </ul>
-        </div>
-      </div> 
-
-      <!-- Right Column (Image) -->
-      <div class="col-md-3 d-flex flex-column justify-content-between">
-        <img src="images/sunflower.jpg" alt="Woman with flower" class="img-fluid rounded shadow fade-in my-2 my-md-0" />
-        <img src="images/woman-window.jpeg" alt="Woman looking out window" class="img-fluid rounded shadow fade-in my-2 my-md-0" />
-      </div>
+<section class="therapy-help-lighthouse py-5">
+  <div class="container text-center">
+    <h2 class="therapy text-center mb-4 fancy-font">How can therapy help me?</h2>
+    <div class="help-list p-4 rounded purple mx-auto fade-in" style="max-width: 700px;">
+      <ul class="list-unstyled text-center">
+        <li>Offer a space to slow down, tune in, and feel heard without judgment</li><br />
+        <li>Help you make sense of what you’re feeling, especially when it’s hard to name</li><br />
+        <li>Support you through life transitions, planned or unexpected</li><br />
+        <li>Provide tools for managing anxiety, low mood, and emotional overwhelm</li><br />
+        <li>Explore patterns in relationships and how they impact your well-being</li><br />
+        <li>Build confidence in your decisions, boundaries, and voice</li><br />
+        <li>Untangle the pressure to do it all perfectly or meet everyone’s expectations</li><br />
+        <li>Help you reconnect with yourself not just as a parent, partner, or professional, but as a person</li><br />
+        <li>Create more space for your needs without guilt</li><br />
+        <li>Support you in navigating loss, grief, and other big emotions with care</li><br />
+        <li>Offer accountability, clarity, and support in showing up for yourself</li><br />
+        <li>Remind you that you don’t have to hold everything alone</li><br />
+      </ul>
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
-<footer class="footer py-3">
+<footer class="footer py-0">
   <div class="container">
-    <div class="row align-items-center text-center text-md-start">
-      <!-- Logo -->
-      <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+    <div class="row align-items-center">
+      
+      <!-- Logo (left on desktop, centered on mobile) -->
+      <div class="col-12 col-md-2 text-center text-md-start mb-3 mb-md-0">
         <a href="index.html">
-         <img src="images/logo.svg" alt="Logo" class="footer-logo img-fluid" />
+          <img src="images/logo.svg" alt="Logo" class="footer-logo img-fluid" />
         </a>
       </div>
 
-      <!-- Contact Info -->
-      <div class="col-12 col-md-10 d-flex justify-content-center justify-content-md-center align-items-md-center">
-        <p class="mb-0">914-462-6842 | Joditragertherapy@gmail.com</p>
+      <!-- Contact text (always centered) -->
+      <div class="col-12 col-md-8 text-center">
+        <p class="footer-contact mb-0">
+          914-462-6842 | <a href="mailto:joditragertherapy@gmail.com" class="footer-email">joditragertherapy@gmail.com</a>
+        </p>
       </div>
+
+      <!-- Heart image (right-aligned, stays there on all screens) -->
+      <div class="col-12 col-md-2 text-center text-md-end mt-0 mt-md-0">
+        <img src="images/heart.png" alt="heart" class="footer-heart img-fluid" />
+      </div>
+
     </div>
   </div>
 </footer>

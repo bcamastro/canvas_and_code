@@ -30,11 +30,92 @@ html, body {
   border-radius: 10px !important;
   overflow: hidden!important;
 }
-
 .jodi {
   font-size: 3.5rem !important;
   margin-bottom: 1rem;
   color: #2c2c2c;
+}
+.photo-frame {
+  position: relative;
+  display: inline-block;    /* shrink-wrap to the image */
+  z-index: 1;
+}
+
+/* Keep the image responsive and rounded */
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2; /* stays above the background blocks */
+}
+
+/* Shared base for the colored blocks */
+.photo-frame::before,
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  z-index: 1; /* just under the image */
+  transition: all 0.3s ease;
+}
+
+/* Deeper lavender bottom layer */
+.photo-frame::before {
+  background-color: #dcd4e8;
+  transform: translate(-6%, -6%);
+}
+
+/* Lighter lilac top layer */
+.photo-frame::after {
+  background-color: #e9e4f2;
+  transform: translate(-3%, -3%);
+}
+.jodi2 {
+  min-width: 400px;
+  max-width: 100%; /* still responsive within container */
+}
+
+/* Keep the image from overlapping text on smaller screens */
+@media (max-width: 992px) {
+  .jodi2 {
+    min-width: 350px; /* relax constraint */
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-frame {
+    display: block;
+    margin: 0 auto;  /* center image */
+  }
+
+  .jodi2 {
+    min-width: auto; /* allow full shrink */
+    width: 90%;      /* stay nicely sized within viewport */
+    max-width: 350px; /* optional: upper limit for small phones */
+  }
+
+  /* Stack Jodi text below image cleanly */
+  #about .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Add breathing room */
+  #about .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+  .photo-frame::before {
+    transform: translate(-4%, -4%);
+  }
+  .photo-frame::after {
+    transform: translate(-2%, 2%);
+  }
 }
 
 .button {
@@ -60,7 +141,7 @@ body {
 
 .fancy-font {
   font-family: "WindSong", cursive;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   font-size: 4rem;
 }
@@ -75,6 +156,38 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Lighthouse background section */
+.therapy-help-lighthouse {
+  background-image: url("images/lighthouse.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Soft overlay for text readability */
+.therapy-help-lighthouse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* light overlay */
+  z-index: 0;
+}
+
+/* Make sure text stays above overlay */
+.therapy-help-lighthouse .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust text box background */
+.therapy-help-lighthouse .help-list {
+  background-color: transparent;
+}
+
+
 .challenge-pill {
   opacity: 0;
   transform: translateY(20px);
@@ -99,9 +212,10 @@ body {
   overflow: visible;
 }
 .hero-section img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
-  overflow: visible;
+  max-height: 350px;
+  /* overflow: visible; */
 }
 .hero-text {
   font-size: 1.5rem;
@@ -111,7 +225,63 @@ body {
 .hero-text em {
   font-style: italic;
 }
+/* --- Carousel Fix --- */
+.carousel-item img {
+  width: 100%;
+  height: auto; /* keeps full aspect ratio */
+  max-height: 100vh; /* prevents overly tall images */
+  object-fit: contain; /* no cropping, just fits nicely */
+  border-radius: 10px;
+}
+/* Limit width of entire carousel */
+#carousel,
+.carousel-inner {
+  max-width: 800px; 
+  max-height: 450px;     /* adjust to preferred size */
+  margin: 0 auto;        /* center it */
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+}
+#carousel,
+#carousel .carousel-inner,
+#carousel .carousel-item,
+#carousel .carousel-item img {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+/* FORCE every layer of the carousel to be rounded & clipped */
+#carousel,
+#carousel .carousel-inner,
+#carousel .carousel-item,
+#carousel .carousel-item img {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
 
+/* make images fill the rounded box so no square corners show */
+.carousel-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* <<< THIS REMOVES THE WHITE CORNERS */
+}
+/* Prevent extra padding from Bootstrap flexbox columns */
+.hero-section .col-md-10 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Adjust height on smaller screens */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh; /* smaller on phones */
+  }
+  .carousel-inner {
+    max-width: 480px; /* fit smaller screens */
+  }
+  /* ✅ Force EVERY carousel layer to stay rounded and clip children */
+}
 .textured-bg{
   background-image: url("images/textured-background.png");
   background-repeat: repeat;
@@ -288,7 +458,7 @@ body {
 
 .maya {
   position: relative; /* needed for the overlay */
-  background-image: url("images/possible-bg.jpeg");
+  background-image: url("images/Lotus.jpeg");
   background-size: cover;
   background-position: center;
   height: 225px;
@@ -338,30 +508,49 @@ body {
 
 
 /* FOOTER LOGO */
-.footer-logo {
-  max-height: 80px;  /* controls size */
-  height: auto;
-  width: auto;
-  max-width: 130px;
-  /* text-align: left; */
-}
 .footer {
-  font-family: 'Georgia', serif;
+  background-color: #efecf4;
   color: #000;
-  background-color: #efecf4;;
+  font-family: 'Georgia', serif;
 }
 
-/* Prevent any flex overlap from earlier code */
-.footer.d-flex {
-  display: block !important;
+.footer-logo {
+  max-height: 80px;
+  width: auto;
 }
 
-.footer p {
+.footer-contact {
+  font-size: 1.1rem;
   margin: 0;
-  font-size: 1.2rem;
-  text-align: center;
 }
 
+.footer-contact a.footer-email {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a.footer-email:hover {
+  text-decoration: underline;
+}
+.footer-heart {
+  height: clamp(100px, 10vw, 170px); /* min, responsive, max */
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+
+/* Make text smaller + heart scale slightly down on smaller screens */
+@media (max-width: 768px) {
+  .footer-contact {
+    font-size: 1rem;
+  }
+
+  .footer-heart {
+    max-height: 50px;
+  }
+}
 /* Space the last two cards evenly on large screens */
 @media (min-width: 992px) {
   .support-section .row > .col-lg-6:last-child {
