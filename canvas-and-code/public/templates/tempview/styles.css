@@ -114,7 +114,7 @@ html, body {
     transform: translate(-4%, -4%);
   }
   .photo-frame::after {
-    transform: translate(-2%, 2%);
+    transform: translate(-2%, -2%);
   }
 }
 
