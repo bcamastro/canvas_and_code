@@ -8,6 +8,8 @@ body {
   color: #892409;
   font-family: "Lora", serif !important;
 }
+
+
 .navbar, .nav-link, .navbar-brand, header h1 {
   font-family: "Lora", serif !important;
 }
@@ -26,10 +28,11 @@ body {
     }
 .custom-navbar {
   background-color: #892409;
-  height: 100px;
+  min-height: 80px;
+  height: auto;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .custom-toggler {
@@ -40,7 +43,6 @@ body {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,196,174,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 
 
 .navbar-brand {
@@ -77,9 +79,20 @@ header {
   background-image: linear-gradient(to bottom, #d9c4ae, #d9cbbc, #d6d2cd);
 }
 
-header img {
-  height: clamp(200px, 50vw, 400px);
+
+/* Wrapper just centers the logo */
+.logo-wrapper {
+  display: inline-block;
 }
+
+/* Base logo styling */
+.logo {
+  height: clamp(200px, 50vw, 400px);
+  display: block;
+  margin: 0 auto;
+}
+
+
 
 
 .section-break {
@@ -128,6 +141,15 @@ header img {
 
 .our-story {
     background-image: linear-gradient(to top, #d9c4ae, #d9cbbc, #d6d2cd);
+    padding-top: 2rem;
+}
+
+#placeholder-s {
+  display:none;
+}
+
+#placeholder-l {
+  display: block;
 }
 
 .logo img {
@@ -264,6 +286,25 @@ body.menu-page {
       font-weight: bold;
       font-size: 0.9rem;
     }
+    /* --- Global Footer --- */
+.site-footer {
+  background-color: #892409;
+  color: #d9c4ae;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-family: "Lora", serif;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 0.2rem 0;
+}
+
+.footer-small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
 
     @media (max-width: 768px) {
       .menu-section {
@@ -273,3 +314,48 @@ body.menu-page {
         display: none;
       }
     }
+
+    @media (max-width: 768px) {
+  .navbar-brand h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    flex-direction: column;
+    align-items: center !important; /* center whole section */
+    text-align: center;
+  }
+
+  .menu-column {
+    width: 100%;
+    align-items: center !important; /* centers each column */
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .collapse {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  #placeholder-l {
+    display: none;
+  }
+  #placeholder-s {
+    display:flex;
+    margin: auto;
+  }
+}

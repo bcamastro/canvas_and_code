@@ -41,7 +41,7 @@ const projects = [
         image: "/images/Western_style.png",
         link: "/templates/Western_Style/index.html"
     }
-
+   
 ];
 
 const photoProjects = [

@@ -48,13 +48,18 @@
   </nav>
 
   <header>
+  <div class="logo-wrapper">
     <img
       src="images/General_Logo_6.png"
       alt="General Bakeshop Logo"
       class="logo"
+      id="main-logo"
     />
-    <h1 class="red-text">Passionate foods and pastries</h1>
-  </header>
+  </div>
+  <h1 class="red-text">Passionate foods and pastries</h1>
+</header>
+
+
 
   <div class="section-break"></div>
 
@@ -63,8 +68,11 @@
     <h2 class="text-center red-text">Our Story</h2>
     <div class="container">
         <div class="row justify-content-center text-center">
-            <div class="col-md-6">
+            <div class="col-md-6" id="placeholder-l">
                 <img src="https://placehold.co/500x500" alt="Placeholder">
+            </div>
+            <div class="col-md-6" id="placeholder-s">
+              <img src="https://placehold.co/300x300" alt="Placeholder" id="placeholder-s">
             </div>
             <div class="col-md-6 p-2 red-background">
                 <p>Chefs David Carmichael and Michelle Quintana had been working together at Michelin-starred 
@@ -87,10 +95,14 @@
     </div>
   </div>
   </div>
- <footer>
-    General Bakeshop · 871 Route 22, Brewster, New York 10509
-  </footer>
+ <footer class="site-footer">
+  <div class="footer-content">
+    <p>General Bakeshop · 871 Route 22 · Brewster, New York 10509</p>
+    <p class="footer-small">© 2025 General Bakeshop — All Rights Reserved</p>
+  </div>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 
   
 </body>
