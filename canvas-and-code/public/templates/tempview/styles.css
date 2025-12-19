@@ -38,14 +38,14 @@ html, body {
   display: block;
 }
 
-#sunflower{
-  margin-left: 4rem;
-}
 
 @media (min-width: 768px){
   .hero-img{
     height: 50vh;
   }
+  #sunflower{
+  margin-left: 4rem;
+}
 }
 
 @media (min-width: 992px){
