@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Realm of Warmth & Whimsy – The Honey Wick</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Parisienne&family=Crimson+Text:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hw-header">
+    <div class="hw-header-inner">
+      <div class="hw-logo">
+        <img src="images/LogoTwo.png" alt="The Honey Wick HW logo" />
+      </div>
+      <div class="hw-site-title">The Honey Wick</div>
+      <button class="hw-menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="hw-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sizes.html">Candle Sizes</a></li>
+        <li><a href="once-upon-a-wick.html">Once Upon a Wick</a></li>
+        <li><a href="index.html#realms">Realms</a></li>
+        <li><a href="contract.html">Customer Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero cream-bg">
+      <h1 class="page-hero-title script-font">
+        The Realm of Warmth &amp; Whimsy
+      </h1>
+    </section>
+
+    <section class="section cream-bg">
+      <div class="container realm-layout">
+        <div class="realm-main-image">
+          <img
+            src="images/realm-warmth-whimsy.png"
+            alt="The Realm of Warmth & Whimsy"
+          />
+        </div>
+
+        <!-- ✅ FIXED SCROLL -->
+        <div class="realm-scroll">
+          <img
+            src="images/scroll.PNG"
+            class="scroll-img"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="realm-scroll-inner">
+            <h2 class="all-caps-heading">The Realm of Warmth &amp; Whimsy</h2>
+            <p>
+              The Realm of Warmth &amp; Whimsy glows with gentle comfort – where
+              sweetness lingers and warmth drifts softly through the air.
+            </p>
+            <p>
+              Sweet orange brightens the space like a small sunbeam, cinnamon hums
+              with cozy spice, and pecan and vanilla melt into a golden softness.
+              Sandalwood and copaiba settle in with a comforting calm, while
+              benzoin adds a creamy, honeyed glow.
+            </p>
+            <p>
+              With Winnora’s warmth in every flame, ease and comfort gather gently,
+              filling your home with a soft glowing calm.
+            </p>
+            <p>
+              An invitation to linger a little longer, wrap yourself in warmth, and
+              let comfort glow all around you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container realm-scent-grid two-column-balanced">
+        <article class="scent-card">
+          <h3 class="all-caps-heading">Home Sweet Spice</h3>
+          <p class="small-caps-subheading">
+            Scent: Cinnamon &amp; Orange
+          </p>
+          <p>
+            Home Sweet Spice flickers to life like a comforting spell – cinnamon
+            swirling in soft, golden ribbons while bright orange sparkles through
+            the air like tiny firelit stars. Cozy spices drift in with inviting
+            sweetness, and a cozy pecan-spice glow settles beneath it all as
+            creamy benzoin deepens the blend into a melted-honey hush.
+          </p>
+          <p>
+            The scent feels alive, soothing, and deeply comforting – the kind of
+            warmth that wraps around you like a familiar embrace. Perfect for creating
+            that magical home-soft glow where everything feels safe, sweet, and
+            wonderfully cozy.
+          </p>
+        </article>
+
+        <article class="scent-card">
+          <h3 class="all-caps-heading">Velvet Dream</h3>
+          <p class="small-caps-subheading">
+            Scent: Vanilla &amp; Sandalwood
+          </p>
+          <p>
+            Indulge in the comforting warmth of Velvet Dream, where creamy vanilla
+            sweetness meets the gentle, grounding richness of sandalwood. To create
+            a softness that feels almost spellborn, this dreamy blend turns any room
+            into a small sanctuary.
+          </p>
+          <p>
+            A velvety warmth drifts through the space like a little fairytale –
+            sweet, soothing, and wrapped in a hush of wonder. Woven within the glow
+            is a curl of cloud-soft comfort, adding a tender, whimsical warmth that
+            makes the scent feel even more serene and storybook-soft – like being
+            gathered into an embrace you never want to leave.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hw-footer">
+    <div class="container narrow footer-inner">
+      <div class="footer-logo">
+        <img src="images/LogoOne.png" alt="The Honey Wick" />
+      </div>
+      <div class="footer-text">
+        <p>
+          Contact:
+          <a href="mailto:thehoneywickglow@gmail.com">
+            thehoneywickglow@gmail.com
+          </a>
+        </p>
+        <p>Home Realm: Inverness, Florida</p>
+        <p>Communication Hours: Monday–Friday, 10 am – 5 pm EST</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".hw-menu-toggle");
+    const nav = document.querySelector(".hw-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+</html>

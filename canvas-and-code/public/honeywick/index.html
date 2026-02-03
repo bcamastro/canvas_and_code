@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Honey Wick</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Parisienne&family=Crimson+Text:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hw-header">
+    <div class="hw-header-inner">
+      <div class="hw-logo">
+        <img src="images/LogoTwo.png" alt="The Honey Wick HW logo" />
+      </div>
+      <div class="hw-site-title">The Honey Wick</div>
+      <button class="hw-menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="hw-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sizes.html">Candle Sizes</a></li>
+        <li><a href="once-upon-a-wick.html">Once Upon a Wick</a></li>
+        <li><a href="index.html#realms">Realms</a></li>
+        <li><a href="contract.html">Customer Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay">
+        <h1 class="hero-title script-font">The Honey Wick</h1>
+        <p class="hero-subtitle">Where Dreams Glow to Life</p>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section cream-bg intro-section">
+      <div class="container two-column">
+        <div class="intro-text">
+          <h2 class="script-font">It All Begins With a Wick</h2>
+          <h3 class="all-caps-heading">From Dream to Flame</h3>
+          <p>
+            Every glow begins with intention, nurtured by nature, wrapped in wonder,
+            and crafted with care. A fairytale in wax, poured with purpose.
+          </p>
+          <p>
+            Each candle tells a story – of realms kept alive, of dreams that linger,
+            and quiet moments that feel like magic coming home.
+          </p>
+          <a href="once-upon-a-wick.html" class="hw-button">
+            The Spark Behind The Honey Wick
+          </a>
+        </div>
+
+        <div class="intro-image">
+          <img
+            src="images/the-honey-wick-market.png"
+            alt="The Honey Wick market with candles and gnomes"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- REALMS GRID -->
+    <section id="realms" class="section cream-bg realms-section">
+      <div class="container">
+        <h2 class="script-font text-center">Where the Realms Are Kept Alive</h2>
+
+        <div class="realms-grid">
+          <article class="realm-card">
+            <a href="realm-rooted-radiant.html">
+              <div class="realm-image">
+                <img
+                  src="images/realm-rooted-radiant.png"
+                  alt="The Realm of Rooted & Radiant"
+                />
+              </div>
+              <h3 class="all-caps-heading realm-name">Rosewryn</h3>
+              <p class="realm-tagline">The Soul of Rooted &amp; Radiant</p>
+            </a>
+          </article>
+
+          <article class="realm-card">
+            <a href="realm-warmth-whimsy.html">
+              <div class="realm-image">
+                <img
+                  src="images/realm-warmth-whimsy.png"
+                  alt="The Realm of Warmth & Whimsy"
+                />
+              </div>
+              <h3 class="all-caps-heading realm-name">Winnora</h3>
+              <p class="realm-tagline">The Glow of Warmth &amp; Whimsy</p>
+            </a>
+          </article>
+
+          <article class="realm-card">
+            <a href="realm-fresh-free.html">
+              <div class="realm-image">
+                <img
+                  src="images/realm-fresh-free.png"
+                  alt="The Realm of Fresh & Free"
+                />
+              </div>
+              <h3 class="all-caps-heading realm-name">Fawndira</h3>
+              <p class="realm-tagline">The Breath of Fresh &amp; Free</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hw-footer">
+    <div class="container narrow footer-inner">
+      <div class="footer-logo">
+        <img src="images/LogoOne.png" alt="The Honey Wick" />
+      </div>
+        <div class="footer-text footer-line">
+          <p> Contact:
+            <a href="mailto:thehoneywickglow@gmail.com">
+                thehoneywickglow@gmail.com
+            </a>
+          </p>
+          <span>Home Realm: Inverness, Florida</span>
+          <span>Communication Hours: Monday–Friday, 10 AM – 5 PM EST</span>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".hw-menu-toggle");
+    const nav = document.querySelector(".hw-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+</html>

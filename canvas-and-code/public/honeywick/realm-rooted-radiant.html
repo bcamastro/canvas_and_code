@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Realm of Rooted & Radiant – The Honey Wick</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Parisienne&family=Crimson+Text:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hw-header">
+    <div class="hw-header-inner">
+      <div class="hw-logo">
+        <img src="images/LogoTwo.png" alt="The Honey Wick HW logo" />
+      </div>
+      <div class="hw-site-title">The Honey Wick</div>
+      <button class="hw-menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="hw-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sizes.html">Candle Sizes</a></li>
+        <li><a href="once-upon-a-wick.html">Once Upon a Wick</a></li>
+        <li><a href="index.html#realms">Realms</a></li>
+        <li><a href="contract.html">Customer Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero cream-bg">
+      <h1 class="page-hero-title script-font">
+        The Realm of Rooted &amp; Radiant
+      </h1>
+    </section>
+
+    <section class="section cream-bg">
+      <div class="container realm-layout">
+        <div class="realm-main-image">
+          <img
+            src="images/realm-rooted-radiant.png"
+            alt="The Realm of Rooted & Radiant"
+          />
+        </div>
+
+        <!-- ✅ FIXED SCROLL -->
+        <div class="realm-scroll">
+          <img
+            src="images/scroll.PNG"
+            class="scroll-img"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="realm-scroll-inner">
+            <h2 class="all-caps-heading">The Realm of Rooted &amp; Radiant</h2>
+            <p>
+              The Realm of Rooted &amp; Radiant rests in quiet strength – where the
+              earth steadies you and warmth glows from within.
+            </p>
+            <p>
+              Welcome the rich, grounding warmth of nature into your home – a place
+              shaped by living land, soft light, and a stillness that seems to linger
+              just beyond the trees. Jasmine brightens the breeze, rosemary moves
+              gently through the grove, and frankincense settles low and steady.
+            </p>
+            <p>
+              Beneath it all, cedarwood hums calm and unwavering, while peony petals
+              catch the glow of passing light and the forest feels quietly awake
+              beneath Rosewryn’s quiet watch.
+            </p>
+            <p>
+              An invitation to breathe deeper, soften fully, and feel held by the
+              quiet magic of the earth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container realm-scent-grid two-column-balanced">
+        <article class="scent-card">
+          <h3 class="all-caps-heading">Whispering Woods</h3>
+          <p class="small-caps-subheading">
+            Scent: Cedarwood &amp; Rosemary
+          </p>
+          <p>
+            Step into the quiet embrace of Whispering Woods, where cedarwood rests
+            low and steady, and rosemary lifts the air with herbal clarity. The
+            blend feels like a hidden corner of the forest, where the air settles,
+            thoughts soften, and time slows just enough for you to notice the
+            gentle hush all around you.
+          </p>
+          <p>
+            Perfect for weaving a gentle woodland calm through your home – grounding,
+            steady, and touched with forest stillness.
+          </p>
+        </article>
+
+        <article class="scent-card">
+          <h3 class="all-caps-heading">Mystic Garden</h3>
+          <p class="small-caps-subheading">
+            Scent: Jasmine &amp; Frankincense
+          </p>
+          <p>
+            In the land of The Honey Wick, there is a quiet place set apart – a
+            hidden garden where jasmine softens the air with its sweet floral hush,
+            and peony drifts through like gentle petal-light warmth. Frankincense
+            gathers at the base, deep and steady, carrying the calm of evergreen and
+            the tender stillness of old magic.
+          </p>
+          <p>
+            Mystic Garden is made for evenings when everything slows, candles burn
+            low, and the world slips into a peaceful, nature-touched hush – softly
+            enchanted, deeply serene, and close to the heart of the grove.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hw-footer">
+    <div class="container narrow footer-inner">
+      <div class="footer-logo">
+        <img src="images/LogoOne.png" alt="The Honey Wick" />
+      </div>
+      <div class="footer-text">
+        <p>
+          Contact:
+          <a href="mailto:thehoneywickglow@gmail.com">
+            thehoneywickglow@gmail.com
+          </a>
+        </p>
+        <p>Home Realm: Inverness, Florida</p>
+        <p>Communication Hours: Monday–Friday, 10 am – 5 pm EST</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".hw-menu-toggle");
+    const nav = document.querySelector(".hw-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+</html>

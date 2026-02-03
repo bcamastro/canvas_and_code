@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candle Sizes & Pricing – The Honey Wick</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Parisienne&family=Crimson+Text:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hw-header">
+    <div class="hw-header-inner">
+      <div class="hw-logo">
+        <img src="images/LogoTwo.png" alt="The Honey Wick HW logo" />
+      </div>
+      <div class="hw-site-title">The Honey Wick</div>
+      <button class="hw-menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="hw-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sizes.html">Candle Sizes</a></li>
+        <li><a href="once-upon-a-wick.html">Once Upon a Wick</a></li>
+        <li><a href="index.html#realms">Realms</a></li>
+        <li><a href="contract.html">Customer Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cream-bg page-hero">
+      <h1 class="page-hero-title script-font">
+        The Honey Wick Candle Sizes &amp; Pricing
+      </h1>
+    </section>
+
+    <section class="section cream-bg">
+      <div class="container narrow">
+        <p class="centered-copy">
+          Every candle from The Honey Wick begins as a whisper from the realms,
+          hand-poured by the Realmdreamer in two enchanted sizes crafted for
+          different kinds of glow.
+        </p>
+        <p class="centered-copy">
+          Each realm unveils two unique Storyborn scents, available as either a
+          Petite Honey Pot or a Dreamer’s Glow Jar.
+        </p>
+
+        <div class="pricing-block">
+          <h3 class="all-caps-heading">
+            The Petite Honey Pot – 4 oz – $14
+          </h3>
+          <p>
+            A dainty jar of wanderlight – perfect for sampling a realm,
+            gifting a little glow, or carrying a pocket-sized piece of magic
+            wherever you go.
+          </p>
+        </div>
+
+        <div class="pricing-block">
+          <h3 class="all-caps-heading">
+            The Dreamer’s Glow Jar – 7 oz – $22
+          </h3>
+          <p>
+            A radiant, immersive candle crafted for deeper dreaming,
+            warm room-filling moments, and story-soaked evenings.
+          </p>
+        </div>
+
+        <div class="pricing-block">
+          <h3 class="all-caps-heading">
+            Wick or No Wick – Your Choice
+          </h3>
+          <p>
+            All Honey Wick candles can be made with a crackling wooden wick,
+            or poured wickless for use on a candle warmer – perfect for those
+            who prefer a flame-free glow.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hw-footer">
+    <div class="container narrow footer-inner">
+      <div class="footer-logo">
+        <img src="images/LogoOne.png" alt="The Honey Wick" />
+      </div>
+      <div class="footer-text">
+        <p>
+          Contact:
+          <a href="mailto:thehoneywickglow@gmail.com">
+            thehoneywickglow@gmail.com
+          </a>
+        </p>
+        <p>Home Realm: Inverness, Florida</p>
+        <p>Communication Hours: Monday–Friday, 10 am – 5 pm EST</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".hw-menu-toggle");
+    const nav = document.querySelector(".hw-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+</html>
