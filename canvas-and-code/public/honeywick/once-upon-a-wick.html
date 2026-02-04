@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Once Upon a Wick – The Honey Wick</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Parisienne&family=Crimson+Text:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hw-header">
+    <div class="hw-header-inner">
+      <div class="hw-logo">
+        <img src="images/LogoTwo.png" alt="The Honey Wick HW logo" />
+      </div>
+      <div class="hw-site-title">The Honey Wick</div>
+      <button class="hw-menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="hw-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sizes.html">Candle Sizes</a></li>
+        <li><a href="once-upon-a-wick.html">Once Upon a Wick</a></li>
+        <li><a href="index.html#realms">Realms</a></li>
+        <li><a href="contract.html">Customer Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero parchment-bg">
+      <h1 class="page-hero-title script-font">Once Upon a Wick</h1>
+      <p class="page-hero-subtitle">
+        The Heart of The Honey Wick – Montana Rayne’s Signature Realm
+      </p>
+    </section>
+
+    <section class="section parchment-bg once-section">
+      <div class="container two-column">
+        <div class="once-image">
+          <img
+            src="images/once-upon-a-wick.png"
+            alt="Once Upon a Wick – the Realmkeeper holding a glowing book"
+          />
+        </div>
+
+        <div class="once-text">
+          <p>
+            It’s a gentle place of becoming, where intention settles softly and scents
+            move like little stories of their own. Sometimes it’s a warm brush of
+            gingerbread passing through the air. Other times, the hush of cashmere
+            settles close. On certain days, cranberry flickers bright; on others, the
+            cool breath of morning dew drifts in like a fresh beginning.
+          </p>
+          <p>
+            Each note arrives on its own time – quiet, tender, meaningful – here,
+            story and feeling meet. Each candle is shaped with care, inspired by the
+            chapters that shape us: the dreams we keep reaching toward, and the soft
+            hope of finding ourselves again and again.
+          </p>
+          <p>
+            Once Upon a Wick is a pre-order, fully customizable realm poured slowly
+            and intentionally – a place for those ready to create something deeply
+            their own. All stories glow to life from a single choice… and yours begins
+            the moment you choose your candle. What are you waiting for?
+          </p>
+
+          <p class="all-caps-heading" style="text-align:center; margin-top:1.5rem;">
+            This is where your Once Upon a Wick begins
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAVORITES -->
+    <section class="section parchment-bg">
+      <div class="container narrow">
+        <h2 class="script-font text-center">
+          Montana Rayne’s Personal Favorites
+        </h2>
+
+        <div class="realm-scent-grid two-column-balanced">
+          <article class="scent-card">
+            <h3 class="all-caps-heading">Enchanted Essence</h3>
+            <p class="small-caps-subheading">Scent: Gingerbread &amp; Cashmere</p>
+            <p>
+              When the flame of Enchanted Essence is born, the room shifts into
+              something softer. A warm gingerbread sweetness rises through the
+              air, comforting and inviting, wrapping the space in a hush that feels
+              almost otherworldly. A little cranberry-sparkle glimmers through the
+              blend, bright and playful, while moonlit vanilla glow rests beneath it
+              all – creamy, steady, and glowing.
+            </p>
+            <p>
+              This is the candle you light when you want cozy evenings to linger,
+              pages to turn a little slower, and the story of your day to end on a
+              note of warmth and wonder.
+            </p>
+          </article>
+
+          <article class="scent-card">
+            <h3 class="all-caps-heading">Only for a Moment</h3>
+            <p class="small-caps-subheading">Scent: Bergamot &amp; Cedarwood</p>
+            <p>
+              There are moments the world grows quiet – when slow, warm early-summer
+              breaths drift through open windows and everything feels suspended
+              between one heartbeat and the next. Only for a Moment is poured for
+              those in-between times.
+            </p>
+            <p>
+              Dew-soft bergamot, gentle citrus, and a breeze of cedarwood gather
+              into a grounded, sunlit calm. It’s the kind of scent that asks you to
+              stay just a little longer, sip a little slower, breathe a little
+              deeper – and remember that even the smallest moments are worth keeping.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hw-footer">
+    <div class="container narrow footer-inner">
+      <div class="footer-logo">
+        <img src="images/LogoOne.png" alt="The Honey Wick" />
+      </div>
+      <div class="footer-text">
+        <p>
+          Contact:
+          <a href="mailto:thehoneywickglow@gmail.com">
+            thehoneywickglow@gmail.com
+          </a>
+        </p>
+        <p>Home Realm: Inverness, Florida</p>
+        <p>Communication Hours: Monday–Friday, 10 am – 5 pm EST</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".hw-menu-toggle");
+    const nav = document.querySelector(".hw-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("open");
+      });
+    }
+  </script>
+</body>
+</html>
