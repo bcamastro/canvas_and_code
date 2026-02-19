@@ -241,7 +241,8 @@ body {
   background-image: url("images/hw-main-photo.png");
   background-size: cover;
   background-position: 50% 22%;
-  filter: saturate(1.05);
+  filter: saturate(1.5);
+  filter: opacity(.8);
 }
 
 .hero-overlay {
@@ -270,9 +271,10 @@ body {
 .hero-subtitle {
   font-family: "Cinzel Decorative", serif;
   text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 0.22em;
-  font-size: 2rem;
-  margin-top: 0.5rem;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-top: -2rem;
 }
 
 /* INTRO */
