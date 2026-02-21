@@ -103,6 +103,69 @@ body {
   font-size: 0.9rem;
 }
 
+/* Sparkle Overlay */
+.page-shimmer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* SINGLE SPARKLE */
+.shimmer-sparkle {
+  position: absolute;
+  width: var(--s, 18px);
+  height: var(--s, 18px);
+  opacity: 0;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.35));
+  animation: shimmer-pop var(--dur, 2.6s) ease-in-out forwards;
+}
+
+/* PULSE + FADE OUT */
+@keyframes shimmer-pop {
+  0% {
+    transform: scale(0.65) rotate(0deg);
+    opacity: 0;
+    filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+  }
+  18% {
+    opacity: 0.9;
+    transform: scale(1) rotate(10deg);
+    filter: drop-shadow(0 0 14px rgba(255,255,255,0.45));
+  }
+  40% {
+    opacity: 0.7;
+    transform: scale(0.82) rotate(-8deg);
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.25));
+  }
+  62% {
+    opacity: 1;
+    transform: scale(1.06) rotate(12deg);
+    filter: drop-shadow(0 0 18px rgba(255,255,255,0.55));
+  }
+  78% {
+    opacity: 0.55;
+    transform: scale(0.9) rotate(-6deg);
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.28));
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7) rotate(0deg);
+    filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+  }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-sparkle {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+
+
 /* HEADER & NAV */
 
 .hw-header {
