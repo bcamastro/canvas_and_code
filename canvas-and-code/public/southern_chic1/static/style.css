@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: #5b421b !important;
+}
+
+h1 {
+  font-family: "Pinyon Script", cursive;
+}
+
+.site_wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.navbar {
+  background-color: #7c7831b8;
+}
+.navbar a, .navbar button {
+    color: #5b421b;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1dac7' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.small_logo {
+  max-height: 40px;
+  width: auto;
+}
+
+.top {
+  position: relative;
+  height: 500px; 
+  background-image: url('images/background.JPG');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.top img   {
+    width: 60vw;
+}
+
+
+.blur {
+  position: absolute;
+  inset: 0;
+  background-color: #f1dac792;
+  z-index: 1;
+}
+
+/* Text/content on top */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content img {
+  width: 80% !important;
+}
+
+
+#about {
+  position: relative;
+  color: #83602a;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.pinyon {
+  font-family: "Pinyon Script", cursive;
+}
+
+.hs-1 {
+  font-size: 48pt;
+}
+
+.hs-3 {
+  font-size: 24pt;
+}
+
+.background-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#about::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("images/checkered.png") center / cover no-repeat;
+  z-index:-1;
+  opacity: .9;
+}
+
+.about_text {
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+#about-content {
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+#about-content.collapsed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#about-content.expanded {
+  max-height: 2000px; 
+}
+
+#readMoreBtn {
+  font-size: 14pt;
+  color: #83602a;
+  border-color: #83602a;
+}
+
+
+.background-icons .icon {
+  position: absolute;
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain;
+  opacity: 1;
+}
+
+
+/* background layer */
+#services::before, #contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/textured_green.png");
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(10px);
+  transform: scale(1.1); */
+  opacity: 1;
+  z-index: 0;
+}
+
+#services::after, #contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(243, 235, 221, 0.54);
+  z-index: 1;
+}
+
+/* keep all your content above the overlays */
+#services .container{
+  position: relative;
+  z-index: 2;
+}
+
+#services {
+    /* background-color: #7c7831b8; */
+    position: relative;
+    /* background-image: url("images/textured_green.png"); */
+    padding: 10px;
+    color: #83602a;
+    overflow: hidden;
+}
+#services a {
+    color: #83602a;
+}
+#two_image_background {
+    background-color: #b4b29168;
+}
+
+.two-images img {
+    width: 85%;
+}
+
+#contact > *{
+ /* background-color: #c9a483; */
+ position: relative;
+ overflow: hidden;
+ z-index: 2;
+}
+
+#contact, #contact a{
+    position: relative;
+    color: #83602a;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery {
+  background-color: #b4b29168;
+}
+
+/* .gallery-head {
+  font-size: 48pt;
+} */
+
+#gallery img {
+  max-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .top {
+    /* Adjust height for larger screens */
+    height: 1000px; 
+  }
+    .top img {
+      /* Adjust image width for larger screens */
+        width: 50vw; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .top img {
+      /* Further adjust image width for very large screens */
+        width: 40vw; 
+    }
+}
