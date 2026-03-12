@@ -149,7 +149,7 @@ h1 {
 
 
 /* background layer */
-#services::before, #contact::before {
+#services::before, #contact::before, .sodabar::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -162,7 +162,7 @@ h1 {
   z-index: 0;
 }
 
-#services::after, #contact::after {
+#services::after, #contact::after, .sodabar::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -180,7 +180,7 @@ h1 {
     /* background-color: #7c7831b8; */
     position: relative;
     /* background-image: url("images/textured_green.png"); */
-    padding: 10px;
+    /* padding: 0 20px 0 20px; */
     color: #83602a;
     overflow: hidden;
 }
@@ -189,6 +189,23 @@ h1 {
 }
 #two_image_background {
     background-color: #b4b29168;
+}
+
+.sodabar {
+  position: relative;
+  background-color: #b4b29168;
+  display: flex;
+  justify-content: center;
+  /* padding: 20px; */
+}
+.sodabar img{
+  display: block;
+  margin: auto;
+  margin-top: -5rem;
+  margin-bottom: 2rem;
+  max-height: 650px;
+  max-width: 100vw;
+  z-index: 2;
 }
 
 .two-images img {
@@ -245,6 +262,9 @@ h1 {
       /* Adjust image width for larger screens */
         width: 50vw; 
     }
+  .sodabar img {
+    margin-top: -2rem;
+  }
 }
 
 @media (min-width: 1200px) {
